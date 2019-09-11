@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>天云 | 遇见传统诗词之美</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+    <meta name="keywords" content="天云,tianyun,诗词">
+    <meta name="description" content="遇见传统诗词之美">
+    <!-- 阻止缓存，好像没什么用（ -->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <!-- 分享缩略图 -->
+    <meta itemprop="name" content="天云"/>
+    <meta itemprop="image" content="assets/logo.png" />
+    <meta name="description" itemprop="description" content="遇见传统诗词之美" />
+    <!-- 图标设置 -->
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <link rel="apple-itouch-icon" href="assets/favicon.png">
+    <!-- 主css -->
+    <link href="assets/index.css" rel="stylesheet">
+    <!-- 字体加载 -->
+    <script type="text/javascript" src="https://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript">
+       $webfont.load("body", "42e5a05ffd6a4e08b483ae85ceeb204f", "FZJinLS-L-GB");
+       /*$webfont.load("#id1,.class1,h1", "42e5a05ffd6a4e08b483ae85ceeb204f", "FZJinLS-L-GB");*/
+       /*．．．*/
+       $webfont.draw();
+    </script>
+  </head>
+  
+  <body>
+    <div class="main-wrap">
+      <article class="main">
+        <div class="left">
+          <div class="logo">
+            <div class="title">
+              <span class="head">诗</span>
+              <span>天云<span class="ver">于己亥年</span></span>
+            </div>
+            <div class="subtitle">遇见传统诗词之美</div>
+          </div>
+          <!--<ul class="download">-->
+          <!--  <li class="item">-->
+          <!--    <i class="icon fa fa-linux"></i>-->
+          <!--    <div class="info">-->
+          <!--      <div class="os">Linux</div>-->
+          <!--      <div class="arch">-->
+          <!--        <a href="release/linux_386.tar.gz" target="_blank">32位</a> /-->
+          <!--        <a href="release/linux_amd64.tar.gz" target="_blank">64位</a>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </li>-->
+          <!--  <li class="item">-->
+          <!--    <i class="icon fa fa-apple"></i>-->
+          <!--    <div class="info">-->
+          <!--      <div class="os">macOS</div>-->
+          <!--      <div class="arch">-->
+          <!--        <a href="release/darwin_amd64.zip" target="_blank">64位</a>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </li>-->
+          <!--  <li class="item">-->
+          <!--    <i class="icon fa fa-windows"></i>-->
+          <!--    <div class="info">-->
+          <!--      <div class="os">Windows</div>-->
+          <!--      <div class="arch">-->
+          <!--        <a href="release/windows_386.zip" target="_blank">32位</a> /-->
+          <!--        <a href="release/windows_amd64.zip" target="_blank">64位</a>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </li>-->
+          <!--</ul>-->
+        </div>
+        <div class="right">
+          <ul class="keys">
+            <li class="item">
+              <div class="wrap">
+                <div class="point red"></div>
+                <div class="title" id="poem_info">无法成功加载，请至其他浏览器打开</div>
+              </div>
+              <div class="subtitle" id="poem_sentence"></div>
+            </li>
+            <!--<li class="item">-->
+            <!--  <div class="wrap">-->
+            <!--    <div class="point blue"></div>-->
+            <!--    <div class="title">『夏意』</div>-->
+            <!--  </div>-->
+            <!--  <div class="subtitle">樹陰滿地日當午，夢覺流莺時壹聲。</div>-->
+            <!--</li>-->
+            <!--<li class="item">-->
+            <!--  <div class="wrap">-->
+            <!--    <div class="point green"></div>-->
+            <!--    <div class="title">『山房春事二首』</div>-->
+            <!--  </div>-->
+            <!--  <div class="subtitle">風恬日暖蕩春光，戲蝶遊蜂亂入房。</div>-->
+            <!--</li>-->
+          </ul>
+          <div class="start-wrap">
+            <a href="." class="start">
+              <img src="assets/start.png">
+            </a>
+            <img class="bg1" src="assets/bg1.svg">
+            <img class="bg2" src="assets/bg2.svg">
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="copyright">
+      <div>
+        <span>© 2019 天云</span>
+      </div>
+
+    </div>
+  <script type="text/javascript" src="assets/index.js"></script>
+  <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    jinrishici.load(function(result) {
+      var sentence = document.querySelector("#poem_sentence")
+      var info = document.querySelector("#poem_info")
+      sentence.innerHTML = result.data.content
+      info.innerHTML = result.data.origin.title
+    });
+  </script>
+  </body>
+</html>
