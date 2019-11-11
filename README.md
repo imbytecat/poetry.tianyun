@@ -2,7 +2,7 @@
 
 _Poetry.Tianyun is a simple page to display traditional Chinese poems._
 
-👉[Demo](https://tianyun.me/). Thanks to [今日诗词·一言 API](https://www.jinrishici.com/).
+👉[Demo](https://poetry.tianyun.me/). Thanks to [今日诗词·一言 API](https://www.jinrishici.com/).
 
 ## Screenshots
 
